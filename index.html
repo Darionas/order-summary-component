@@ -8,18 +8,40 @@
   <meta name="description" content="Order summary card challenge on Frontend Mentor"/>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
   <!--<link rel="stylesheet" href="main.css"/>-->
-  <!--<script defer src="main.js"></script>-->
 </head>
 <body>
     <div class="grid_container">
         <!--1st component-->
-        
+        <picture class="image">
+            <source media="(max-width: 47.9375rem)" srcset="images/pattern-background-mobile.svg" />
+            <source media="(min-width: 48rem)" srcset="images/pattern-background-desktop.svg" />
+            <img class="image__product" src="images/pattern-background-desktop.svg" alt="The product" />
+        </picture>
         <!--2nd component-->
-        
-       <!--3rd component-->
+         <main class="main"> 
+             <h1 class="main__title">Order Summary</h1>
+             <p class="main__paragraph"> You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like!</p>
+             <div class="price">
+                <img class="price__image" src="/images/icon-music.svg" alt="Icon Music"> <!--Itself it is icon, do not use Icon Music. Instead of this use Sheet music-->
+                <div class="price__offer">
+                    <p class="price__info">Annual Plan</p>
+                    <p class="price__price"><span>$</span><span>59.99</span>/year</p> <!--Here is one note-->
+                </div>
+                <a class="price__change" href="#home">Change</a>
+             </div>
+            <div class="submition">
+                <button class="btn" type="submit">Proceded to Payement</button>
+            </div>
+            <div class="cancel">
+                <p class="cancel__title">Cancel Order<p>
+            </div>
+        </main>
+        <!--3rd component-->
         <footer class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">@Pra Pre & @Darionas</a>.
+            Challenge by Frontend Mentor. 
+            Coded by <a href="https://www.frontendmentor.io/profile/ValiaCantillo" target="_blank"> @Valia Cantillo</a>,
+            <a href="https://www.frontendmentor.io/profile/Abdoulaye33" target="_blank"> @Abdoulaye</a> &
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">@Darionas</a>.
         </footer>
     </div>
 </body>
