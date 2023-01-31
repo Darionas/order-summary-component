@@ -34,7 +34,7 @@ communicates that you agree to respect the time of the developers managing and d
 
 - [x] Create drawing from design (structure of design)(1st task)
 - [x] Create of repo (2nd task)
-- [ ] Create HTML layout (3rd task)
+- [x] Create HTML layout (3rd task)
 - [ ] Create CSS layout according style guides (4th task)
 - [ ] Create grid layout for mobile first (5th task)
 - [ ] Craete grid layout for desktop (6th task)
