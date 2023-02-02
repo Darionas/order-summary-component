@@ -1,0 +1,66 @@
+/* style according style guide */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Nunito+Sans:wght@300&family=Poppins&family=Red+Hat+Display:wght@500,700,900&display=swap');
+@import url(reset.css);
+@import url(FM_part.css);
+
+:root {
+    /* Primary */
+      --pale-blue: hsl(225, 100%, 94%);
+      --bright-blue:hsl(245, 75%, 52%);
+      
+  
+    /* Neutral */
+      --very-pale-blue: hsl(225, 100%, 98%);
+      --desaturated-blue: hsl(224, 23%, 55%);
+      --dark-blue: hsl(223, 47%, 23%);
+    
+    /* fonts */
+      --ff-primary: 'Red Hat Display', sans-serif;
+      --fw-500: 500;
+      --fw-700: 700;
+      --fw-900: 900;
+      /* font-size */
+      --fs-16: 1rem; /* base font 16px */
+
+  }
+  /* style according style guide end*/
+
+  /* typography */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* typography end */
+
+/* ------------------Mobile layout--------------*/
+
+
+/* style 1st component  for mobile*/
+
+/* style 2nd component for mobile*/
+
+/* style 3rd component for mobile*/
+
+/* ------------------Desktop layout--------------*/
+@media screen and (min-width: 48rem) {
+
+/* style 1st component  for desktop*/
+
+/* style 2nd component for desktop*/
+
+/* style 3rd component for desktop*/
+
+
+}
+
+
+
+/*------grid area names--------------------*/

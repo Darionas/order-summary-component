@@ -7,30 +7,28 @@
   <meta name="keywords" content="Order summary card solution"/>
   <meta name="description" content="Order summary card challenge on Frontend Mentor"/>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
-  <!--<link rel="stylesheet" href="main.css"/>-->
+  <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
     <div class="grid_container">
         <!--1st component-->
-        <picture class="image">
-            <source media="(max-width: 47.9375rem)" srcset="images/pattern-background-mobile.svg" />
-            <source media="(min-width: 48rem)" srcset="images/pattern-background-desktop.svg" />
-            <img class="image__product" src="images/pattern-background-desktop.svg" alt="The product" />
-        </picture>
+        <div class="image">
+            <img src='images/illustration-hero.svg' alt="The product" />
+        </div>
         <!--2nd component-->
-         <main class="main"> 
+        <main class="main"> 
              <h1 class="main__title">Order Summary</h1>
              <p class="main__paragraph"> You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like!</p>
              <div class="price">
-                <img class="price__image" src="/images/icon-music.svg" alt="Icon Music"> <!--Itself it is icon, do not use Icon Music. Instead of this use Sheet music-->
+                <img class="price__image" src="images/icon-music.svg" alt="Sheet Music">
                 <div class="price__offer">
                     <p class="price__info">Annual Plan</p>
-                    <p class="price__price"><span>$</span><span>59.99</span>/year</p> <!--Here is one note-->
+                    <p class="price__price"><span>$</span><span>59.99</span>/year</p>
                 </div>
                 <a class="price__change" href="#home">Change</a>
              </div>
             <div class="submition">
-                <button class="btn" type="submit">Proceded to Payement</button>
+                <button class="submition__btn" type="submit">Proceded to Payement</button>
             </div>
             <div class="cancel">
                 <p class="cancel__title">Cancel Order<p>
@@ -46,3 +44,4 @@
     </div>
 </body>
 </html>
+
