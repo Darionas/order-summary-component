@@ -38,8 +38,7 @@ communicates that you agree to respect the time of the developers managing and d
 - [x] Create CSS layout according style guides (4th task)
 - [x] Create grid layout for mobile first (5th task)
 - [ ] Craete grid layout for desktop (6th task)
-- [ ] Implement JavaScript (7th task)
-- [ ] Overview of solution and RWD (8th task)
+- [ ] Overview of solution and RWD (7th task)
 - [ ] Tada it is done. Congratulation you rich your goal.🎉
 
 
