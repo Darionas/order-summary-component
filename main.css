@@ -1,26 +1,26 @@
 /* style according style guide */
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Nunito+Sans:wght@300&family=Poppins&family=Red+Hat+Display:wght@500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Nunito+Sans:wght@300&family=Poppins&family=Red+Hat+Display:wght@500;700;900&display=swap');
 @import url(reset.css);
 @import url(FM_part.css);
 
 :root {
     /* Primary */
-      --pale-blue: hsl(225, 100%, 94%);
+      --pale-blue: hsl(225, 100%, 94%); /* base color */
       --bright-blue:hsl(245, 75%, 52%);
       
-  
     /* Neutral */
       --very-pale-blue: hsl(225, 100%, 98%);
       --desaturated-blue: hsl(224, 23%, 55%);
       --dark-blue: hsl(223, 47%, 23%);
+      --white: hsl(0, 0%, 100%);
     
     /* fonts */
       --ff-primary: 'Red Hat Display', sans-serif;
-      --fw-500: 500;
+      --fw-500: 500;   /* base font weight */
       --fw-700: 700;
       --fw-900: 900;
       /* font-size */
-      --fs-16: 1rem; /* base font 16px */
+      --fs-16: 1rem;   /* base font size 16px */
 
   }
   /* style according style guide end*/
@@ -41,16 +41,140 @@ p {
 /* typography end */
 
 /* ------------------Mobile layout--------------*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-16);
+  font-weight: var(--fw-500);
+  font-family: var(--ff-primary);
+  color: var(--desaturated-blue);
+  background-color: var(--pale-blue);
+  background-image: url('images/pattern-background-desktop.svg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 50%;
+}
 
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+     'image'
+      'main'
+      'attribution';
+  margin: 2rem;
+  /*border: 2px solid green;*/
+}
 
 /* style 1st component  for mobile*/
+.image {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+     'image__product';
+  justify-items: center;
+}
+
+.image__product {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  width: 100%;
+}
 
 /* style 2nd component for mobile*/
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+      'main__title'
+      'main__paragraph'
+      'price'
+      'submition'
+      'cancel';
+  gap: 1.5rem;
+  justify-items: center;
+  background-color: var(--white);
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  box-shadow: 0px 38px 60px -12px rgba(0, 0, 0, 0.11);  
+}
+
+.main__title {
+  font-weight: var(--fw-900);
+  font-size: 1.4rem;
+  color: var(--dark-blue);
+  /*border: 2px solid green;*/
+}
+
+.main__paragraph {
+    text-align: center;
+    /*border: 2px solid green;*/
+}
+
+.price {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+      'price__image price__offer price__change';
+  gap: 1.5rem;
+  padding: 0.6rem;
+  background-color: var(--very-pale-blue);
+  border-radius: 0.8rem;
+  /*border: 2px solid green;*/
+}
+
+.price__image {
+  align-self: center;
+  min-width: 1.5rem; /*test*/
+  /*border: 2px solid green;*/
+}
+
+.price__info {
+    font-weight: var(--fw-700);
+    color: var(--dark-blue);
+}
+
+.price__change {
+  align-self: center;
+  font-weight: var(--fw-700);
+  font-size: 0.8rem;
+  justify-self: right;
+}
+
+.submition__btn {
+  border: none;
+  color: var(--white);
+  padding: 0.4rem;
+  width: 14rem;
+  border-radius: 0.6rem;
+  background-color: var(--bright-blue);
+  box-shadow: 0px 12px 45px -12px rgb(56, 41, 224, 0.6);
+}
+
+.cancel__btn {
+  border: none;
+  background-color: transparent;
+  color: var(--desaturated-blue);
+  font-weight: var(--fw-700);
+}
+
+.attribution {
+  width: 80%;
+  justify-self: center;
+  /*border: 2px solid green;*/
+}
 
 /* style 3rd component for mobile*/
 
 /* ------------------Desktop layout--------------*/
 @media screen and (min-width: 48rem) {
+  
+  * {
+     display: none;
+  }
 
 /* style 1st component  for desktop*/
 
@@ -64,3 +188,35 @@ p {
 
 
 /*------grid area names--------------------*/
+
+.image {
+  grid-area: image;
+}
+
+.main {
+  grid-area: main;
+}
+
+.main__title {
+  grid-area: main__title;
+}
+
+.main__paragraph {
+  grid-area: main__paragraph;
+}
+
+.price {
+  grid-area: price;
+}
+
+.submition {
+  grid-area: submition;
+}
+
+.cancel {
+  grid-area: cancel;
+}
+
+.attribution {
+  grid-area: attribution;
+}
