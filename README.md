@@ -36,7 +36,7 @@ communicates that you agree to respect the time of the developers managing and d
 - [x] Create of repo (2nd task)
 - [x] Create HTML layout (3rd task)
 - [x] Create CSS layout according style guides (4th task)
-- [ ] Create grid layout for mobile first (5th task)
+- [x] Create grid layout for mobile first (5th task)
 - [ ] Craete grid layout for desktop (6th task)
 - [ ] Implement JavaScript (7th task)
 - [ ] Overview of solution and RWD (8th task)
