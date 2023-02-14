@@ -116,32 +116,52 @@ body {
 
 .price {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-      'price__image price__offer price__change';
-  gap: 1.5rem;
+      'price__offer price__change';
+  gap: 1rem; /*make smaller*/
   padding: 0.6rem;
   background-color: var(--very-pale-blue);
   border-radius: 0.8rem;
-  /*border: 2px solid green;*/
+  border: 2px solid green;
+}
+
+/*set this block properties in mob layout as block looks the same on both layouts*/
+.price__offer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+      'price__image price__info'
+      'price__image price__price';
+  justify-self: start;
+  border: 2px solid green;
 }
 
 .price__image {
   align-self: center;
-  min-width: 1.5rem; /*test*/
-  /*border: 2px solid green;*/
+  justify-self: start;/*added property*/
+  max-width: 2.2rem;/*corrected*/
+  border: 2px solid green;
 }
 
 .price__info {
     font-weight: var(--fw-700);
     color: var(--dark-blue);
+    margin: 0 0 0 0.7rem; /*added property*/
+    /*border: 2px solid green;*/
+}
+
+ /*added property*/
+.price__price {
+  margin: 0 0 0 0.7rem;
 }
 
 .price__change {
   align-self: center;
   font-weight: var(--fw-700);
   font-size: 0.8rem;
-  justify-self: right;
+  justify-self: end;
+  border: 2px solid green;
 }
 
 .submition__btn {
@@ -171,21 +191,33 @@ body {
 
 /* ------------------Desktop layout--------------*/
 @media screen and (min-width: 48rem) {
-  
+  /*
   * {
      display: none;
   }
+  */
 
 /* style 1st component  for desktop*/
+.grid_container {
+  width: 25rem;
+  /*border: 2px solid green;*/
+}
 
 /* style 2nd component for desktop*/
 
-/* style 3rd component for desktop*/
-
-
+.price__change {
+    cursor: pointer;
 }
 
+.submition__btn {
+    cursor: pointer;
+}
 
+.cancel__btn {
+    cursor: pointer;
+}
+
+}
 
 /*------grid area names--------------------*/
 
@@ -207,6 +239,26 @@ body {
 
 .price {
   grid-area: price;
+}
+
+.price__image {
+  grid-area: price__image;
+}
+
+.price__offer {
+  grid-area: price__offer;
+}
+
+.price__info {
+  grid-area: price__info;
+}
+
+.price__price {
+  grid-area: price__price;
+}
+
+.price__change {
+  grid-area: price__change;
 }
 
 .submition {
