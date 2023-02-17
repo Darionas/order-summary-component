@@ -54,7 +54,7 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 50%;
+  background-size: 100% 43%;
 }
 
 .grid_container {
@@ -64,8 +64,8 @@ body {
      'image'
       'main'
       'attribution';
-  margin: 2rem;
-  /*border: 2px solid green;*/
+  margin: 1.5rem;
+  max-width: 25rem;
 }
 
 /* style 1st component  for mobile*/
@@ -106,12 +106,10 @@ body {
   font-weight: var(--fw-900);
   font-size: 1.4rem;
   color: var(--dark-blue);
-  /*border: 2px solid green;*/
 }
 
 .main__paragraph {
     text-align: center;
-    /*border: 2px solid green;*/
 }
 
 .price {
@@ -119,49 +117,46 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
       'price__offer price__change';
-  gap: 1rem; /*make smaller*/
+  gap: 1rem;
   padding: 0.6rem;
   background-color: var(--very-pale-blue);
   border-radius: 0.8rem;
-  border: 2px solid green;
 }
 
-/*set this block properties in mob layout as block looks the same on both layouts*/
 .price__offer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-      'price__image price__info'
-      'price__image price__price';
+      'price__image price__container';
+  gap: 1rem;
   justify-self: start;
-  border: 2px solid green;
 }
 
 .price__image {
   align-self: center;
-  justify-self: start;/*added property*/
-  max-width: 2.2rem;/*corrected*/
-  border: 2px solid green;
+  justify-self: start;
+  max-width: 2.2rem;
+}
+
+.price__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'price__info'
+    'price__price';
+  min-width: 6rem;
 }
 
 .price__info {
     font-weight: var(--fw-700);
     color: var(--dark-blue);
-    margin: 0 0 0 0.7rem; /*added property*/
-    /*border: 2px solid green;*/
-}
-
- /*added property*/
-.price__price {
-  margin: 0 0 0 0.7rem;
 }
 
 .price__change {
   align-self: center;
+  justify-self: end;
   font-weight: var(--fw-700);
   font-size: 0.8rem;
-  justify-self: end;
-  border: 2px solid green;
 }
 
 .submition__btn {
@@ -184,27 +179,19 @@ body {
 .attribution {
   width: 80%;
   justify-self: center;
-  /*border: 2px solid green;*/
 }
 
 /* style 3rd component for mobile*/
 
 /* ------------------Desktop layout--------------*/
 @media screen and (min-width: 48rem) {
-  /*
-  * {
-     display: none;
-  }
-  */
 
 /* style 1st component  for desktop*/
 .grid_container {
   width: 25rem;
-  /*border: 2px solid green;*/
 }
 
 /* style 2nd component for desktop*/
-
 .price__change {
     cursor: pointer;
 }
@@ -241,12 +228,16 @@ body {
   grid-area: price;
 }
 
+.price__offer {
+  grid-area: price__offer;
+}
+
 .price__image {
   grid-area: price__image;
 }
 
-.price__offer {
-  grid-area: price__offer;
+.price__container {
+  grid-area: price__container;
 }
 
 .price__info {

@@ -38,8 +38,8 @@ communicates that you agree to respect the time of the developers managing and d
 - [x] Create CSS layout according style guides (4th task)
 - [x] Create grid layout for mobile first (5th task)
 - [x] Craete grid layout for desktop (6th task)
-- [ ] Overview of solution and RWD (7th task)
-- [ ] Tada it is done. Congratulation you rich your goal.🎉
+- [x] Overview of solution and RWD (7th task)
+- [x] Tada it is done. Congratulation you reach your goal.🎉
 
 
 ## We use GitHub flow, so all code changes happen through Pull Request
