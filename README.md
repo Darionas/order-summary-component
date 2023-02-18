@@ -1,85 +1,74 @@
-# Frontend Mentor challenge -  Order summary card
+# Frontend Mentor - Order summary card solution
 
-## Contributing to project
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).
 
-## Welcome! 👋
+## Table of contents
 
-&nbsp;A big welcome and thank you for considering contributing to open source project!
-Reading and following these guidlines will help us make the contribution process easy and effective for everyone involved. It also
-communicates that you agree to respect the time of the developers managing and developing these open source projects. In return, we will reciprocate that respect by addressing your issue, assessing changes, and helping you finalize your pull requests. 
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Quicklinks
+## Overview
 
-* [Challenge based on](#challenge-intermediate-based-on) 
-* [Main goal for challenge](#main-goal-for-challenge)
-* [Plan workflow](#plan-workflow)
-* [We use GitHub flow, so all code changes happen through Pull Request](#we-use-github-flow-so-all-code-changes-happen-through-pull-request)
-* [Dealing with issues](#dealing-with-issues)
-* [Use a consistent coding style](#use-a-consistent-coding-style)
-* [License](#license)
-* [References](#references)
+### The challenge
 
+Users should be able to:
 
-## Challenge newbie based on
-
-- HTML
-- CSS (grid layout)
-
-## Main goal for challenge
-
-- View the optimal layout for the site depending on their device's screen size
 - See hover states for interactive elements
 
-## Plan workflow
+### Screenshot
 
-- [x] Create drawing from design (structure of design)(1st task)
-- [x] Create of repo (2nd task)
-- [x] Create HTML layout (3rd task)
-- [x] Create CSS layout according style guides (4th task)
-- [x] Create grid layout for mobile first (5th task)
-- [x] Craete grid layout for desktop (6th task)
-- [x] Overview of solution and RWD (7th task)
-- [x] Tada it is done. Congratulation you reach your goal.🎉
+![Order_summary_card](./images/order_summary_card.png)
+
+### Links
+
+- Solution URL: (https://github.com/Darionas/order-summary-component)
+- Live Site URL: (https://darionas.github.io/order-summary-component/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties:
+    - CSS Grid
+    - Mobile-first workflow
+    - Desktop layout
+
+But created with love.
+
+### What I learned
+
+- none, just repeat what I have learned.
 
 
-## We use GitHub flow, so all code changes happen through Pull Request
+### Continued development
 
-1. Fork the repository (repo) to your own GitHub account
-2. Clone the project to your PC (Git)
-3. Create a new branch locally with a succinct but descriptive name
-4. Make changes (edit, delete, copy, add) on the new brach
-5. Commit changes to the branch
-6. Following any formatting and testing guidelines specific to this repo
-7. Push changes to your fork (repo)
-8. Open a Pull Request (PR) in our repository and follow the PR template so that we can efficiently review the changes.
-9. Wait when your contribution will be accepted (merged) or declined to fix issues.
+- Grid layout module.
+- JavaScript.
+- Practise dealing with Git & GitHub.
+- Practise dealing with vscode live share extension.
 
-## Dealing with issues
+### Useful resources
 
-Write issue reports with detail, background, and sample code
+- none
 
-* A quick summary and/or background
-* Steps to reproduce
-    * Be specific!
-    * Give sample code if you can. 
-* What you expected would happen
-* What actually happens
-* Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
+## Author
 
-## Use a consistent coding style
+- Frontend Mentor - [@Darionas](https://www.frontendmentor.io/profile/Darionas)
 
-- 4 steps for indentation rather than tabs
+## Acknowledgments
 
-## License
+- Thank you Frontend Mentor team for opportunity to try, practice, train yourself in different level challenges and gain invaluable experience.
+- Thank you @Vikram from Frontend Mentor for guidance.
+- Project was done in collaboration with @Valia Cantillo and @Abdoulaye on vscode live share extension.
 
-In short, when you submit code changes, you submissions are understood to be under the [Frontend_Mentor license](https://www.frontendmentor.io/license) that covers the project. Feel free to contact the maintainers if that's a concern.
 
-## References
-
-This document was adapted from the open-source contribution guidelines:
-  * [A basic template for contributing guidlines](https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62) 
-  * [A basic template for contributing guidlines](https://github.com/auth0/open-source-template/blob/master/GENERAL-CONTRIBUTING.md) 
-  * [Fork and Pull Request Workflow](https://github.com/susam/gitpr) 
-  * [Working on your first GitHub issue](https://www.stevejgordon.co.uk/working-on-your-first-github-issue) 
-  * [Understanding GitHub issues](https://www.youtube.com/watch?v=TKJ4RdhyB5Y) 
-  * [Background to deal with Git and GitHub](https://www.w3schools.com/git/default.asp)
